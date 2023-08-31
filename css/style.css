@@ -1,0 +1,543 @@
+/* Common */
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.center{
+    text-align: center;
+}
+section{
+    position: relative;
+    width: 100%;
+    padding: 30px 120px;
+}
+
+
+/* Navbar */
+
+.sidenav-hidden{
+    display: none;
+}
+
+.sidenav{
+    display: inline;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #343F56;
+    align-items: center;
+}
+.navbar-link li{
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+}
+.logo-brand{
+    padding: 10px 100px;
+}
+#logo{
+    width: 50px;
+    cursor: pointer;
+}
+
+nav{
+    padding: 20px 100px;
+}
+.btn-navbar{
+    width: 150px;
+    padding: 10px 25px;
+    background-color: #FB9300;
+    color: #F5E6CA;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: bold;
+}
+.btn-navbar:hover{
+    background-color: #F5E6CA;
+    color: #FB9300;
+}
+
+
+
+/* Cover Page */
+.page-utama{
+    margin: 0;
+    padding: 0;
+    position:relative;
+    background-color: black;
+    overflow: hidden;
+}
+
+.slideshow-container{
+    margin:auto;
+    position: relative;
+}
+
+.cover{
+    width: 100%;
+    max-width: 100%;
+    max-height: 578px;
+    padding: 12x;
+    margin: auto;
+    display: block;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+.text-cover{
+    color: white;
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    margin: auto;
+}
+
+#text-cover-h1{
+    padding: 10px 10px;
+    margin: 10px 10px;
+    font-size: 70px;
+    text-shadow: 3px 2px 5px #414141;
+}
+
+#text-cover-p{
+    padding: 10px 10px;
+    margin: 10px 10px;
+    text-shadow: 3px 2px 5px #414141;
+    width: 60%;
+    letter-spacing: 1px;
+    height: 40%;
+}
+
+.next, .prev{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 200px;
+    transition: 0.6 ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+/* Section Fasilitas */
+
+.campus{
+    background-color: #e5edfc;
+}
+
+.head-fac{
+    padding: 24px 100px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.content-fac{
+    padding: 32px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.text-content{
+    padding-top: 18px;
+}
+
+.rounded-pic{
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    margin:auto;
+    display: flex;
+    justify-content: center;
+}
+
+.camp-ballon{
+    padding: 30px 30px;
+}
+/* Pesan */
+
+
+.head-pesan{
+    padding-left: 10px;
+    font-size: 32px;
+    font-weight: bold;
+}
+.content-pesan{
+    padding-top: 32px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.input-pesan{
+    padding: 10px 0px;
+    font-size: 13px;
+}
+.input-pesan label{
+    position: relative;
+    display: inline-block;
+    width: 120px;
+}
+.input-pesan .label-gender{
+    width: 80px;
+}
+.pesan-kiri{
+    flex-basis: 1;
+    margin-left: 0;
+    margin-right: 50px;
+}
+.pesan-kiri .input-pesan .input-text{
+    width: 360px;
+    height: 30px;
+}
+.pesan-kiri .input-pesan textarea{
+    width: 360px;
+    resize: none;
+    font-size: 13px;
+}
+.input-pesan .label-gender{
+    width: 50px;
+}
+#submit-pesan{
+    margin: 25px 0;
+    width: 500px;
+    padding: 20px 25px;
+    background-color: #FB9300;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: bold;
+}
+#submit-pesan:hover{
+    background-color: #F5E6CA;
+    color: #FB9300;
+}
+
+.input-pesan p{
+    display: inline-block;
+    width: 10px;
+}
+.pesan-kanan{
+    flex-grow: 4;
+    margin: 0px 50px;
+
+}
+.pesan-kanan .input{
+    width: 100%;
+    height: 315px;
+    resize: none;
+}
+
+/* footer
+height: 100%; */
+
+footer{
+    text-align: center;
+    background-color: #343F56;
+    padding: 24px 24px;
+    color:#F5E6CA;
+}
+
+@media only screen and (max-width:1135px){
+    .pesan-kiri .input-pesan .input-text{
+        width: 240px;
+    }
+    .pesan-kiri .input-pesan textarea{
+        width: 240px;
+    }
+    #submit-pesan{
+        width: 381px;
+    }
+}
+
+@media only screen and (max-width:1200px){
+section{
+    padding: 30px 80px;
+}
+#text-cover-p{
+    width: 60%;
+}
+}
+
+@media only screen and (max-width:1063px){
+    .btn-navbar{
+        width: 130px;
+    }
+}
+@media only screen and (max-width:983px) {
+    header{
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    #logo{
+        width: 80px;
+    }
+    .input-pesan label{
+        width: 80px;
+    }
+    .pesan-kiri .input-pesan .input-text{
+        width: 200px;
+    }
+    .pesan-kiri .input-pesan textarea{
+        width: 200px;
+    }
+    #submit-pesan{
+        width: 300px;
+    }
+}
+@media only screen and (max-width:859px){
+    .text-cover{
+        top: 100px;
+        left: 50px;
+    }
+    section{
+        padding: 30px 40px;
+    }
+}
+
+/* Responsive */
+@media only screen and (min-width:801px){
+    .sidenav{
+        display: none;
+    }
+    .icon-sidebar{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    /* SideBar */
+
+header{
+    justify-content: space-between;
+    flex-flow: row nowrap;
+}
+#logo{
+    width: 50px;
+}
+
+.icon-sidebar{
+    padding-right: 20px;
+    font-size: 32px;
+    cursor: pointer;
+    color: white;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #19233c;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #343F56;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+    .navbar-link{
+        display: none;
+    }
+    .logo-brand{
+        padding: 10px 24px;
+    }
+    section{
+        padding: 24px 50px;
+    }
+    .text-cover{
+        top: 110px;
+        left: 50px;
+    }
+    #text-cover-h1{
+        font-size: 65px;
+    }
+
+    .head-pesan{
+        text-align: center;
+    }
+    .content-pesan{
+        padding-top: 32px;
+        padding-left: 10px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+    .pesan-kiri{
+        padding: 0;
+        margin: 0;
+    }
+    .pesan-kiri .input-pesan .input-text{
+        width: 85%;
+    }
+    .pesan-kiri .input-pesan textarea{
+        width: 85%;
+    }
+
+    #submit-pesan{
+        width: 100%;
+    }
+    .pesan-kanan{
+        padding: 0;
+        margin: 0;
+        margin-bottom: 50px;
+        flex-grow: 0;
+        height: 50%;
+        margin-top: 20px;
+    }
+    .pesan-kanan .input{
+        height: 150px;
+    }
+}
+
+@media only screen and (max-width: 758px){
+    .pesan-kiri .input-pesan .input-text{
+        width: 100%;
+    }
+    .pesan-kiri .input-pesan textarea{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 740px){
+    .text-cover{
+        top: 50px;
+        left: 50px;
+    }
+    .content-fac{
+        flex-flow: column nowrap;
+        justify-content: center;
+        padding: 32px 30px;
+    }
+}
+
+@media only screen and (max-width: 530px){
+    #text-cover-h1{
+        font-size: 50px;
+    }
+    #text-cover-p{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    *{
+        font-size: 14px;
+    }
+    .head-fac{
+        padding: 0;
+    }
+    #text-cover-h1{
+        font-size: 48px;
+        margin: 0;
+    }
+    #text-cover-p{
+        font-size: 14px;
+        margin: 0;
+    }
+}
+
+
+@media only screen and (max-width: 420px){
+    section{
+        padding: 20px 30px;
+    }
+    .text-cover{
+        top: 40px;
+        left: 40px;
+    }
+    .head-fac{
+        font-size: 26px;
+    }
+    .head-pesan{
+        font-size: 26px;
+    }
+    .rounded-pic{
+        width: 140px;
+        height: 140px;
+    }
+    .content-pesan{
+        padding: 0;
+        padding-top: 20px;
+    }
+    .head-pesan{
+        padding: 0;
+    }
+    .rounded-pic{
+        width: 120px;
+        height: 120px;
+    }
+}
+@media only screen and (max-width:365px){
+    .text-cover{
+        top: 24px;
+    }
+    #text-cover-h1{
+        font-size: 36px;
+        padding: 10px 10px;
+    }
+    #text-cover-p{
+        padding: 10px 10px;
+    }
+}
+
+@media only screen and (max-width: 336px){
+    .text-cover{
+        top: 24px;
+        left: 24px;
+    }
+    #text-cover-h1{
+        font-size: 32px;
+    }
+    #text-cover-p{
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+    .head-fac{
+        font-size: 24px;
+    }
+    .head-pesan{
+        font-size: 24px;
+    }
+}

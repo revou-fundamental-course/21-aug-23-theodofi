@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIT Campus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="sidenav sidenav-hidden" id="mySidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="profile.html">Our Profile</a>
+        <a href="#">Achievement</a>
+        <a href="#pesan">Message Us</a>
+    </div>
+    <div class="main">
+        <header>
+            <div class="logo-brand">
+                <img id="logo" src="img/revou.webp" alt="logo">
+            </div>
+            <nav>
+                <ul class="navbar-link">
+                    <li><a href="#"><button class="btn-navbar">Home</button></a></li>
+                    <li><a href="profile.html"><button class="btn-navbar">Our Profile</button></a></li>
+                    <li><a href="#"><button class="btn-navbar">Achievement</button></a></li>
+                    <li><a href="#pesan"><button class="btn-navbar">Message Us</button></a></li>
+                </ul>
+            </nav>
+            <span class="icon-sidebar" onclick="openNav()">&#9776;</span>
+        </header>
+        <section class="page-utama">
+            <div class="slideshow-container">
+                <img class="cover" src="img/bg1.jpg" alt="cover1">
+            </div>
+            <div class="text-cover">
+                <h1 id="text-cover-h1">Hi <span id="name"></span>, <br>Welcome to MIT</h1>
+                <p  id="text-cover-p">Massachusetts Institute of Technology (MIT)</p>
+            </div>
+        </section>
+        <section class="campus">
+            <h1 class="head-fac">Our Facillitation</h1>
+            <div class="content-fac">
+                <section class="camp-ballon" id="teacher">
+                    <img class="rounded-pic" src="img/teacher.jpg" alt="">
+                    <p class="text-content center">Profesional Teacher</p>
+                </section>
+                <section class="camp-ballon" id="sport">
+                    <img class="rounded-pic" src="img/sport-field.jpg" alt="">
+                    <p class="text-content center">Sport Field</p>
+                </section>
+                <section class="camp-ballon" id="classroom">
+                    <img class="rounded-pic" src="img/classroom.webp" alt="">
+                    <p class="text-content center">Classroom</p>
+            </div>
+            </section>
+        </section>
+        <section id="pesan">
+            <h1 class="head-pesan">Message Us</h1>
+            <div class="content-pesan">
+                <div class="pesan-kiri">
+                    <form class="form-pesan" id="mpesan" onsubmit="return validationFormPesan()">
+                        <div class="input-pesan">
+                            
+                            <label for="mname">Nama</label>
+                            <p>:</p>
+                            <input  type="text" placeholder="Nama" id="mname" class="input-text">
+                            <span class="error" id="mnameError"></span>
+                        </div>
+                        <div class="input-pesan">
+                            <label for="mttl">Tanggal Lahir</label>
+                            <p>:</p>
+                            <input type="date" value="now" id="mttl" class="input-text">
+                            <span class="error" id="mttlError"></span>
+                        </div>
+                        <div class="input-pesan">
+                            <label for="mgender">Jenis Kelamin</label>
+                            <p>:</p>
+                            <input type="radio" value="Laki-laki" name="mgender" id="mgenderL">
+                            <label for="l" class="label-gender">Laki-laki</label>
+                            <input type="radio" value="Perempuan" name="mgender" id="mgenderP">
+                            <label for="p" class="label-gender">Perempuan</label>
+                            <span class="error" id="mgenderError"></span>
+                        </div>
+                        <div class="input-pesan">
+                            <label for="mpesan">Pesan</label>
+                            <p>:</p>
+                            <textarea name="pesan-teks" id="mpesanTeks" cols="30" rows="5" class="input" placeholder="Sampaikan pesan Anda.."></textarea>
+                            <span class="error" id="mpesanError"></span>
+                        </div>
+                        <button id="submit-pesan" type="submit">Submit</button>
+                    </form>
+                </div>
+                <div class="pesan-kanan">
+                    <textarea cols="30" rows="10" class="input" id="showPesan"></textarea>
+                    <p id="showPesanTes"></p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h5>Created by @theodofi</h5>
+        </footer>
+    </div>
+    <!-- Javascript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
